@@ -1,0 +1,17 @@
+{
+  "name": "daniel-glory-wedding-invite",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@studio-freight/lenis": "^1.0.42",
+    "nuxt": "^3.16.0",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {}
+}
