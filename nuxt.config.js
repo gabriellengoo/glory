@@ -1,4 +1,4 @@
-const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://daniel-and-glory-wedding.com'
+const siteUrl = process.env.NUXT_PUBLIC_SITE_URL || 'https://glory-delta-two.vercel.app'
 const siteTitle = 'Daniel & Glory | Wedding Invitation'
 const siteDescription = 'Join Daniel Owusu and Glory Igwe for their wedding celebration on 10th September 2026 at 3pm in London.'
 const socialDescription = 'The beginning of forever starts here. Celebrate Daniel Owusu and Glory Igwe on 10th September 2026 at 3pm in London.'
