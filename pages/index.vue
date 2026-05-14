@@ -9,7 +9,8 @@
       @click="openInvite"
     >
       <img class="opening-envelope" src="/images/intro-screen.png" alt="Deep green envelope invitation" />
-      <span>Click to open</span>
+      <span class="open-label-desktop">Click to open</span>
+      <span class="open-label-mobile">Tap to open</span>
     </button>
 
     <section class="intro section-reveal" aria-labelledby="intro-title">
@@ -28,28 +29,73 @@
 
       <div class="intro-grid">
         <div class="intro-copy">
-          <div class="logo-pair">
+          <div class="logo-pair glass-logo">
             <img class="main-logo" src="/images/logo.png" alt="Daniel and Glory monogram" />
-            <img class="couple-image" src="/images/couple.png" alt="Traditional wedding couple illustration" />
           </div>
           <p class="script-line">The beginning of forever starts here</p>
-          <h1 id="intro-title">Daniel Owusu &amp; Glory Igwe</h1>
-          <div class="intro-details" aria-label="Wedding summary">
-            <span>10th September 2026</span>
-            <span>3pm</span>
-            <span>341-351 High St, London E15 4QZ</span>
+          <div class="ornament name-divider" aria-hidden="true">
+            <span class="divider-diamond"></span>
           </div>
-          <a class="rsvp-anchor" href="#rsvp">RSVP</a>
+          <h1 id="intro-title">
+            <span>Daniel Owusu</span>
+            <span><em>&amp;</em> Glory Igwe</span>
+          </h1>
+          <div class="ornament name-divider name-divider-heart" aria-hidden="true">
+            <svg class="ornament-heart" viewBox="0 0 16 16" fill="none">
+              <path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="intro-details" aria-label="Wedding summary">
+            <span class="date-detail">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 10H21M7 3V5M17 3V5M6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              10th <small>September 2026</small>
+            </span>
+            <span class="time-detail">
+              <svg class="detail-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12 6V12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M16.24 16.24L12 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              3pm
+            </span>
+            <span class="location-detail">
+              <svg class="detail-icon" viewBox="0 0 64 64" aria-hidden="true">
+                <path fill="currentColor" d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z" />
+              </svg>
+              341-351 High St, London E15 4QZ
+            </span>
+          </div>
+          <a class="rsvp-anchor glass-button" href="#rsvp">RSVP</a>
+          <div class="ornament ornament-bottom" aria-hidden="true">
+            <svg class="ornament-heart" viewBox="0 0 16 16" fill="none">
+              <path d="M1.24264 8.24264L8 15L14.7574 8.24264C15.553 7.44699 16 6.36786 16 5.24264V5.05234C16 2.8143 14.1857 1 11.9477 1C10.7166 1 9.55233 1.55959 8.78331 2.52086L8 3.5L7.21669 2.52086C6.44767 1.55959 5.28338 1 4.05234 1C1.8143 1 0 2.8143 0 5.05234V5.24264C0 6.36786 0.44699 7.44699 1.24264 8.24264Z" fill="currentColor" />
+            </svg>
+          </div>
+          <a class="wedding-details-link" href="#details">
+            <span aria-hidden="true"></span>
+            <strong>Wedding details</strong>
+            <span aria-hidden="true"></span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="details section-reveal" aria-labelledby="details-title">
+    <section id="details" class="details section-reveal" aria-labelledby="details-title">
       <div class="details-layout">
         <img class="floating-flower details-flower" src="/images/purple-flower.png" alt="" loading="lazy" />
+        <img class="floating-flower details-flower-secondary" src="/images/green-flower.webp" alt="" loading="lazy" />
         <div class="details-panel">
-          <p class="eyebrow">Wedding details</p>
-          <h2 id="details-title">Join us in London</h2>
+          <div class="details-heading-row">
+            <div>
+              <p class="eyebrow">Wedding details</p>
+              <h2 id="details-title">Join us in London</h2>
+            </div>
+            <figure class="details-couple-frame" aria-label="Daniel and Glory wedding portrait">
+              <img src="/images/couple.png" alt="Daniel and Glory wedding portrait" loading="lazy" />
+            </figure>
+          </div>
           <dl>
             <div>
               <dt>Date</dt>
@@ -69,7 +115,6 @@
           </a>
         </div>
 
-        <img class="detail-card-image" src="/images/invite-card.png" alt="Wedding invitation detail card" loading="lazy" />
       </div>
     </section>
 
@@ -166,16 +211,21 @@
           <h2 id="gift-title">With gratitude</h2>
           <p>
             Your presence at our wedding is the greatest gift of all.
-            However, if you wish to bless us with a gift of financial support, we would be deeply grateful.
+            If you wish to bless us with a gift of financial support, Revolut will let you enter your chosen amount and send it securely.
           </p>
           <div class="account-details">
             <p><span>Name</span><strong>Glory Igwe</strong></p>
             <p><span>Sort code</span><strong>04-00-75</strong></p>
             <p><span>Account number</span><strong>77540778</strong></p>
           </div>
-          <button class="copy-button" type="button" @click="copyAccountDetails">
-            {{ copyMessage || 'Copy account details' }}
-          </button>
+          <div class="gift-actions">
+            <button class="copy-button glass-button" type="button" @click="copyAccountDetails">
+              {{ copyMessage || 'Copy account details' }}
+            </button>
+            <a class="copy-button glass-button" :href="revolutPayUrl" target="_blank" rel="noopener" @click="showGiftModal = false">
+              Open Revolut Pay
+            </a>
+          </div>
         </section>
       </div>
     </Teleport>
@@ -206,7 +256,9 @@ const showGiftModal = ref(false)
 const showIntroScreen = ref(true)
 const introScreenLeaving = ref(false)
 const copyMessage = ref('')
+const revolutPayUrl = 'https://revolut.me/gloryigwe'
 let observer
+let introTimer
 
 const step = computed(() => {
   if (!form.attendance) return 1
@@ -244,19 +296,24 @@ onMounted(() => {
   )
 
   revealItems.forEach((item) => observer.observe(item))
+
+  introTimer = window.setTimeout(openInvite, 1000)
 })
 
 onBeforeUnmount(() => {
   observer?.disconnect()
+  window.clearTimeout(introTimer)
 })
 
 function openInvite() {
+  if (!showIntroScreen.value || introScreenLeaving.value) return
+
   window.scrollTo(0, 0)
   introScreenLeaving.value = true
 
   window.setTimeout(() => {
     showIntroScreen.value = false
-  }, 720)
+  }, 420)
 }
 
 async function submitRsvp(event) {
