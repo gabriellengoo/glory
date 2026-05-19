@@ -214,9 +214,9 @@
             If you wish to bless us with a gift of financial support, Revolut will let you enter your chosen amount and send it securely.
           </p>
           <div class="account-details">
-            <p><span>Name</span><strong>Glory Igwe</strong></p>
-            <p><span>Sort code</span><strong>04-00-75</strong></p>
-            <p><span>Account number</span><strong>77540778</strong></p>
+            <p><span>Name</span><strong>Daniel Owusu</strong></p>
+            <p><span>Sort code</span><strong>04-29-09</strong></p>
+            <p><span>Account number</span><strong>01566385</strong></p>
           </div>
           <div class="gift-actions">
             <button class="copy-button glass-button" type="button" @click="copyAccountDetails">
@@ -256,7 +256,7 @@ const showGiftModal = ref(false)
 const showIntroScreen = ref(true)
 const introScreenLeaving = ref(false)
 const copyMessage = ref('')
-const revolutPayUrl = 'https://revolut.me/gloryigwe'
+const revolutPayUrl = 'https://revolut.me/danielecma'
 let observer
 let introTimer
 
@@ -347,7 +347,7 @@ async function submitRsvp(event) {
 }
 
 async function copyAccountDetails() {
-  const details = 'Glory Igwe\nSort code: 04-00-75\nAccount number: 77540778'
+  const details = 'Daniel Owusu\nSort code: 04-29-09\nAccount number: 01566385'
 
   try {
     await navigator.clipboard.writeText(details)
